@@ -24,9 +24,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/face-api.js/dist/face-api.min.js"]
           },
           "configurations": {
             "production": {
@@ -120,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "face-recognition-module"
+  "defaultProject": "face-recognition-module",
+  "cli": {
+    "analytics": false
+  }
 }

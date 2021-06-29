@@ -1,0 +1,52 @@
+.title-wrapper {
+  width: 100%;
+  height: fit-content;
+}
+
+.title {
+  margin-top: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  color: rgb(40, 138, 230);
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #474747, #555555);
+  box-shadow: 32px 32px 64px #434343, -32px -32px 64px #5b5b5b;
+  animation: contentin linear 1s;
+}
+
+.description-wrapper {
+  width: 100%;
+  height: fit-content;
+}
+
+.description {
+  margin-top: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  animation: contentin linear 1.5s;
+}
+
+@media (orientation: portrait) {
+  .title {
+    font-size: 1rem;
+  }
+}
+
+@keyframes contentin {
+  from {
+    transform: translateY(-100%);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}

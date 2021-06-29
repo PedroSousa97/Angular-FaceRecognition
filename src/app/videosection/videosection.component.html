@@ -1,0 +1,18 @@
+<div class="button-wrapper"  fxLayout = "column" fxLayoutAlign="center center">
+  <div id="button-div" fxLayoutAlign="center center">
+    <button (click)="StartStream()"> <!--Button that will trigger the stream-->
+      <i id="Icon" class="fas fa-video"></i>
+    </button>
+  </div>
+</div>
+
+<!--If stream is not supported show a default banner/message-->
+<div *ngIf="!this.streamsupport" class="compatibility-banner" fxLayout = "column" fxLayoutAlign="center center">
+  <div class="banner" fxLayout = "column" fxLayoutAlign="center center">
+    <p>Sorry but your device doesn't support streaming!</p>
+    <img src="../../assets/images/banner.png">
+  </div>
+</div>
+
+<!--If streaming is supported and button is active, then initialize the video component-->
+<app-video *ngIf="this.isStreaming&&this.streamsupport"></app-video>

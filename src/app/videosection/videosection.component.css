@@ -1,0 +1,66 @@
+.button-wrapper {
+  width: 100%;
+  min-height: 10rem;
+  animation: buttonin linear 2s;
+}
+
+#button-div {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 161px;
+  background: #474747;
+  box-shadow: 12px 12px 23px #3c3c3c, -12px -12px 23px #525252;
+  transition: all 1s;
+}
+
+button {
+  border-radius: 161px;
+  background: none;
+  border: none;
+  width: 8rem;
+  height: 8rem;
+}
+
+i {
+  color: rgb(40, 138, 230);
+  font-size: 3rem;
+}
+
+#button-div:hover {
+  border-radius: 161px;
+  background: #474747;
+  box-shadow: -12px -12px 23px #3c3c3c, 12px 12px 23px #525252;
+  transition: all 1s;
+}
+
+@keyframes buttonin {
+  from {
+    transform: translateY(-100%);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+
+.compatibility-banner {
+  width: 100%;
+  height: fit-content;
+  margin-top: 2rem;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  max-width: 30rem;
+  max-height: 20rem;
+}
+
+.banner p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}

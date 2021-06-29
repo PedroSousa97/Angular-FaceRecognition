@@ -1,0 +1,24 @@
+#webcam-stream {
+  width: 100%;
+  height: 100vh;
+}
+
+#video-container {
+  margin: 2rem;
+  border-radius: 19px;
+  background: #474747;
+  box-shadow: 20px 20px 60px #3c3c3c, -20px -20px 60px #525252;
+}
+
+@media (orientation: portrait) {
+  .title {
+    font-size: 1rem;
+  }
+  #webcam-stream {
+    height: fit-content;
+    margin: 1rem;
+  }
+  #video-container {
+    min-height: fit-content;
+  }
+}

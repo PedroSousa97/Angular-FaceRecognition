@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #4f4f4f;
+}
+
+canvas {
+  position: absolute !important;
+}
+
+/* Simple overall webapp styling, the main setting is the canvas styling, to make it able to overlay the video */
