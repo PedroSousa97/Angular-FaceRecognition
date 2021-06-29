@@ -6860,9 +6860,11 @@ class VideoComponent {
                 //recize detections having into account the detections and desplaySize
                 const resizeDetections = _assets_face_api__WEBPACK_IMPORTED_MODULE_2__["resizeResults"](detections, displaySize);
                 //Clear previous detection
-                canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
-                //draw newest detection
-                _assets_face_api__WEBPACK_IMPORTED_MODULE_2__["draw"].drawDetections(canvas, resizeDetections);
+                if (resizeDetections.length) {
+                    canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+                    //draw newest detection
+                    _assets_face_api__WEBPACK_IMPORTED_MODULE_2__["draw"].drawDetections(canvas, resizeDetections);
+                }
             }), 100); //At each 0,1s repeat the async arrow function, which means detect and draw the face detections
         });
     }
