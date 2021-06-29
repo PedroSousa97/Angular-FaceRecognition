@@ -6785,7 +6785,7 @@ class VideosectionComponent {
     }
 }
 VideosectionComponent.ɵfac = function VideosectionComponent_Factory(t) { return new (t || VideosectionComponent)(); };
-VideosectionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: VideosectionComponent, selectors: [["app-videosection"]], decls: 6, vars: 2, consts: [["fxLayout", "column", "fxLayoutAlign", "center center", 1, "button-wrapper"], ["id", "button-div", "fxLayoutAlign", "center center"], [3, "click"], ["id", "Icon", 1, "fas", "fa-video"], ["class", "compatibility-banner", "fxLayout", "column", "fxLayoutAlign", "center center", 4, "ngIf"], [4, "ngIf"], ["fxLayout", "column", "fxLayoutAlign", "center center", 1, "compatibility-banner"], ["fxLayout", "column", "fxLayoutAlign", "center center", 1, "banner"], ["src", "./assets/images/banner.png"]], template: function VideosectionComponent_Template(rf, ctx) { if (rf & 1) {
+VideosectionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: VideosectionComponent, selectors: [["app-videosection"]], decls: 6, vars: 2, consts: [["fxLayout", "column", "fxLayoutAlign", "center center", 1, "button-wrapper"], ["id", "button-div", "fxLayoutAlign", "center center"], [3, "click"], ["id", "Icon", 1, "fas", "fa-video"], ["class", "compatibility-banner", "fxLayout", "column", "fxLayoutAlign", "center center", 4, "ngIf"], [4, "ngIf"], ["fxLayout", "column", "fxLayoutAlign", "center center", 1, "compatibility-banner"], ["fxLayout", "column", "fxLayoutAlign", "center center", 1, "banner"], ["src", "assets/images/banner.png"]], template: function VideosectionComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2);
@@ -6894,9 +6894,9 @@ class VideoComponent {
     startStreaming() {
         //Get face api models that will be used to create the face detections
         Promise.all([
-            _assets_face_api__WEBPACK_IMPORTED_MODULE_2__["nets"].tinyFaceDetector.loadFromUri('./assets/models'),
-            _assets_face_api__WEBPACK_IMPORTED_MODULE_2__["nets"].faceLandmark68Net.loadFromUri('./assets/models'),
-            _assets_face_api__WEBPACK_IMPORTED_MODULE_2__["nets"].faceRecognitionNet.loadFromUri('./assets/models')
+            _assets_face_api__WEBPACK_IMPORTED_MODULE_2__["nets"].tinyFaceDetector.loadFromUri('assets/models'),
+            _assets_face_api__WEBPACK_IMPORTED_MODULE_2__["nets"].faceLandmark68Net.loadFromUri('assets/models'),
+            _assets_face_api__WEBPACK_IMPORTED_MODULE_2__["nets"].faceRecognitionNet.loadFromUri('assets/models')
         ]).then(() => {
             //get media devices then get media stream (stream src)
             navigator.mediaDevices.getUserMedia({ video: true })

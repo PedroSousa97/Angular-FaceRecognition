@@ -74,9 +74,9 @@ export class VideoComponent implements OnInit,OnDestroy {
   startStreaming(){
     //Get face api models that will be used to create the face detections
     Promise.all([
-      faceapi.nets.tinyFaceDetector.loadFromUri('./assets/models'),
-      faceapi.nets.faceLandmark68Net.loadFromUri('./assets/models'),
-      faceapi.nets.faceRecognitionNet.loadFromUri('./assets/models')
+      faceapi.nets.tinyFaceDetector.loadFromUri('assets/models'),
+      faceapi.nets.faceLandmark68Net.loadFromUri('assets/models'),
+      faceapi.nets.faceRecognitionNet.loadFromUri('assets/models')
     ]).then(()=>{ //since it is a promise, only after all models are loaded then create the video/webcam stream
       //get media devices then get media stream (stream src)
       navigator.mediaDevices.getUserMedia({video: true})
